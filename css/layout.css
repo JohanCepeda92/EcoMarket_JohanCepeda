@@ -1,0 +1,326 @@
+/* ECOMARKET - DISTRIBUCIÓN DE LA PÁGINA
+   Archivo: layout.css */
+
+
+/* 1. CONTENEDOR GENERAL */
+
+.container {
+    width: calc(100% - 2rem);
+    max-width: var(--container-width);
+    margin-inline: auto;
+}
+
+
+/* 2. ENCABEZADO Y NAVEGACIÓN */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1rem;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.logo__icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.logo__text {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--color-primary-dark);
+}
+
+.nav {
+    order: 3;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+}
+
+.nav__link {
+    display: inline-block;
+    padding-block: 0.35rem;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header__icon {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 3. BANNER PRINCIPAL */
+
+.hero {
+    padding-block: 3rem;
+    background-color: var(--color-background);
+}
+
+.hero__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__text {
+    max-width: 600px;
+}
+
+.hero__eyebrow,
+.section__eyebrow {
+    display: inline-block;
+    margin-bottom: 0.85rem;
+    color: var(--color-primary-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero__text h1 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(2.2rem, 7vw, 4rem);
+    letter-spacing: -1.5px;
+}
+
+.hero__text h1 span {
+    color: var(--color-primary);
+}
+
+.hero__text p {
+    max-width: 520px;
+    margin-bottom: 1.75rem;
+    color: var(--color-text-light);
+}
+
+.hero__image {
+    min-width: 0;
+}
+
+.hero__image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--border-radius-large);
+}
+
+
+/* 4. SECCIÓN DE PRODUCTOS DESTACADOS */
+
+.section {
+    padding-block: 4rem;
+}
+
+.section__heading {
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.section__heading h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    letter-spacing: -0.75px;
+}
+
+.section__heading p {
+    color: var(--color-text-light);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+
+/* 5. ACCIÓN DESPUÉS DE LOS PRODUCTOS */
+
+.featured__action {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+
+/* 6. MENSAJE ECOLÓGICO */
+
+.eco-message {
+    padding-block: 3.5rem;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.eco-message__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.eco-message .section__eyebrow {
+    color: var(--color-white);
+}
+
+.eco-message h2 {
+    max-width: 650px;
+    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+.eco-message p {
+    max-width: 650px;
+}
+
+
+/* 7. PIE DE PÁGINA */
+
+.footer {
+    padding-top: 3.5rem;
+    background-color: #f5f5dc;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer__brand {
+    max-width: 350px;
+}
+
+.logo--footer {
+    margin-bottom: 1rem;
+}
+
+.footer__brand p,
+.footer__column p {
+    color: var(--color-text-light);
+}
+
+.footer__column h2 {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.footer__column ul,
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.footer__bottom {
+    padding-block: 1.25rem;
+    border-top: 1px solid rgba(51, 51, 51, 0.12);
+    text-align: center;
+}
+
+.footer__bottom p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+
+/* 8. TABLETAS */
+
+@media (min-width: 600px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .eco-message__content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* 9. ESCRITORIO */
+
+@media (min-width: 900px) {
+
+    .header__content {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .nav {
+        order: initial;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .nav__list {
+        gap: 1.5rem;
+    }
+
+    .hero {
+        padding-block: 5rem;
+    }
+
+    .hero__content {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+        gap: 4rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .section {
+        padding-block: 5rem;
+    }
+
+    .footer__content {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+}
