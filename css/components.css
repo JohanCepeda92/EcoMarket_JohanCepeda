@@ -277,3 +277,42 @@ textarea.form-control {
     }
 
 }
+
+/* FAVORITOS DEL CATÁLOGO */
+
+.favorite-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.favorite-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text-light);
+    background-color: var(--color-white);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition:
+        color var(--transition-normal),
+        background-color var(--transition-normal),
+        border-color var(--transition-normal);
+}
+
+.favorite-button:hover,
+.favorite-input:checked + .favorite-button {
+    border-color: #e9a0a0;
+    color: #c73535;
+    background-color: #fff0f0;
+}
+
+.favorite-input:focus-visible + .favorite-button {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
