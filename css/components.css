@@ -409,3 +409,45 @@ textarea.form-control {
     }
 
 }
+
+/* VALIDACIÓN VISUAL DEL FORMULARIO DE CONTACTO */
+
+.contact-form .form-control:required:invalid {
+    border-color: #d64545;
+}
+
+.contact-form .form-control:required:valid {
+    border-color: #27ae60;
+}
+
+.contact-form .form-control:focus:required:invalid {
+    box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.12);
+}
+
+.contact-form .form-control:focus:required:valid {
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+/* Redes sociales */
+
+.contact-social__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background-color: var(--color-white);
+    font-size: 0.9rem;
+    transition:
+        color var(--transition-normal),
+        background-color var(--transition-normal),
+        border-color var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.contact-social__links a:hover {
+    color: var(--color-primary-dark);
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+}
