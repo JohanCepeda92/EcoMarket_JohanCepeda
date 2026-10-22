@@ -701,11 +701,30 @@
     background-color: var(--color-background);
 }
 
+/* VENTANA DEL CARRUSEL */
+
+.testimonial-viewport {
+    width: 100%;
+    max-width: 1008px;
+    margin: 2.5rem auto 0;
+    overflow: hidden;
+}
+
+/* FILA DE TESTIMONIOS */
+
 .testimonial-track {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
     gap: 1.5rem;
-    margin-top: 2.5rem;
+    width: max-content;
+    margin: 0;
+    animation: testimonial-scroll 30s linear infinite;
+}
+
+/* PAUSAR AL PASAR EL CURSOR */
+
+.testimonial-viewport:hover .testimonial-track {
+    animation-play-state: paused;
 }
 
 .about-cta {
@@ -742,7 +761,7 @@
     }
 
     .testimonial-track {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .about-cta__content {
