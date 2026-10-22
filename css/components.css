@@ -425,6 +425,7 @@ textarea.form-control {
 /* VALIDACIÓN VISUAL DEL FORMULARIO DE CONTACTO */
 
 .contact-form .form-control:required:invalid:not(:placeholder-shown) {
+.contact-form .form-control:required:invalid {
     border-color: #d64545;
 }
 
@@ -433,6 +434,7 @@ textarea.form-control {
 }
 
 .contact-form .form-control:focus:required:invalid:not(:placeholder-shown) {
+.contact-form .form-control:focus:required:invalid {
     box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.12);
 }
 
