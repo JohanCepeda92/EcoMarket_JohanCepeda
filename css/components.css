@@ -321,10 +321,19 @@ textarea.form-control {
    COMPONENTES DE SOBRE NOSOTROS
    ========================================= */
 
+.mission-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-card,
+.value-card {
+    height: 100%;
+}
+
 .mission-card,
 .value-card,
 .testimonial-card {
-    height: 100%;
     padding: 1.75rem;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-large);
@@ -362,6 +371,9 @@ textarea.form-control {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex: 0 0 320px;
+    width: 320px;
+    min-width: 0;
 }
 
 .testimonial-card__person {
@@ -412,6 +424,7 @@ textarea.form-control {
 
 /* VALIDACIÓN VISUAL DEL FORMULARIO DE CONTACTO */
 
+.contact-form .form-control:required:invalid:not(:placeholder-shown) {
 .contact-form .form-control:required:invalid {
     border-color: #d64545;
 }
@@ -420,6 +433,7 @@ textarea.form-control {
     border-color: #27ae60;
 }
 
+.contact-form .form-control:focus:required:invalid:not(:placeholder-shown) {
 .contact-form .form-control:focus:required:invalid {
     box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.12);
 }
@@ -450,4 +464,28 @@ textarea.form-control {
     color: var(--color-primary-dark);
     border-color: var(--color-primary);
     background-color: var(--color-primary-light);
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 600px) {
+
+    .testimonial-viewport {
+        padding-inline: max(
+            0px,
+            calc((100% - min(82vw, 320px)) / 2)
+        );
+    }
+
+    .testimonial-card {
+        flex-basis: min(82vw, 320px);
+        width: min(82vw, 320px);
+    }
+
+}
+
+.mission-card__icon svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--color-primary-dark);
 }

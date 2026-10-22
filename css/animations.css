@@ -72,3 +72,44 @@
     }
 
 }
+
+/* =========================================
+   CARRUSEL HORIZONTAL DE TESTIMONIOS
+   ========================================= */
+
+@keyframes testimonial-scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% + 0.75rem));
+    }
+
+}
+
+/* RESPETAR LA PREFERENCIA DE MOVIMIENTO REDUCIDO */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .testimonial-track {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        animation: none;
+        transform: none;
+    }
+
+    .testimonial-card {
+        flex: 0 1 320px;
+        width: auto;
+        opacity: 1;
+        animation: none;
+    }
+
+    .testimonial-card--duplicate {
+        display: none;
+    }
+
+}
