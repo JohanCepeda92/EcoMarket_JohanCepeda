@@ -1,135 +1,173 @@
 # 🌿 EcoMarket
 
-**Compra responsable, vive sostenible.**
+Tienda web académica dedicada a alternativas ecológicas, reutilizables y sostenibles para la vida cotidiana.
 
-EcoMarket es un proyecto académico de una tienda virtual dedicada a productos ecológicos, reutilizables y sostenibles. Su objetivo es presentar una experiencia de compra visualmente atractiva, accesible y adaptable a distintos dispositivos, promoviendo hábitos de consumo consciente.
+## Objetivo del proyecto
 
-## 📌 Descripción del proyecto
+Presentar una experiencia web clara para explorar productos sostenibles y conocer la propuesta de EcoMarket, promoviendo hábitos de consumo más conscientes.
 
-EcoMarket reúne productos orientados a un estilo de vida más sostenible. La plataforma permite explorar un catálogo de productos, conocer los valores de la marca y consultar la página de contacto.
+## 🛍️ Características principales
 
-El sitio se desarrolla con HTML5 semántico y CSS3, sin utilizar JavaScript ni frameworks externos.
+- Diseño adaptable a escritorio y dispositivos móviles.
+- Navegación entre las cuatro páginas del sitio.
+- Catálogo de 20 productos con imágenes, categorías, precios y disponibilidad.
+- Sección Sobre nosotros con historia, misión, visión, valores y testimonios.
+- Página de Contacto con datos de contacto, formulario y mapa interactivo que señala una ubicación de referencia académica.
 
-## 🎯 Objetivos
+## Páginas del sitio
 
-* Diseñar una interfaz limpia, accesible y adaptable.
-* Aplicar HTML5 semántico y hojas de estilo CSS organizadas.
-* Utilizar Flexbox, CSS Grid, pseudoclases y transiciones.
-* Construir cuatro vistas conectadas mediante navegación.
-* Promover una presentación visual coherente con los valores de sostenibilidad.
+- **Inicio:** presentación de EcoMarket y productos destacados.
+- **Productos:** catálogo, filtros y controles de ordenamiento.
+- **Sobre nosotros:** historia, misión, visión, valores y testimonios.
+- **Contacto:** información de contacto, formulario y ubicación de referencia.
 
-## 🛍️ Vistas del proyecto
+## 🧰 Tecnologías
 
-### 1. Inicio
+- HTML5
+- CSS3
 
-Incluye el encabezado de navegación, el banner principal, seis productos destacados, un llamado a la acción y el pie de página.
+## Visualización local
 
-### 2. Productos
+1. Abre la carpeta del proyecto en Visual Studio Code.
+2. Si tienes instalada la extensión **Live Server**, abre `index.html` y selecciona **Open with Live Server** o pulsa **Go Live**.
+3. Navega a las demás páginas desde el menú. También puedes abrir directamente `views/productos.html`, `views/sobre-nosotros.html` y `views/contacto.html` en el navegador.
 
-Presenta un catálogo visual de 20 productos con fotografías, precios de ejemplo, categorías, etiquetas de disponibilidad, controles de filtrado, opciones de favoritos y paginación visual.
+## 📸 Capturas reales del sitio
 
-### 3. Sobre nosotros
-
-Expone la historia, la misión, la visión y los principios ecológicos de EcoMarket. También incorpora testimonios de demostración y un llamado a la acción.
-
-### 4. Contacto
-
-Incluye información de contacto, un formulario con validación HTML, indicadores visuales mediante CSS, enlaces a redes sociales y un mapa ilustrativo.
-
-## 🧰 Tecnologías utilizadas
-
-* **HTML5:** estructura semántica, navegación y formularios.
-* **CSS3:** diseño visual, variables, Flexbox, Grid, media queries, pseudoclases, transiciones y animaciones.
-* **Git:** control de versiones.
-* **GitHub:** alojamiento del repositorio y gestión de ramas.
-
-No se utilizan JavaScript ni frameworks externos.
-
-## 📂 Estructura del proyecto
-
-```text
-EcoMarket/
-├── css/
-│   ├── main.css
-│   ├── layout.css
-│   ├── components.css
-│   └── animations.css
-├── img/
-│   ├── hero/
-│   ├── icons/
-│   └── products/
-├── views/
-│   ├── productos.html
-│   ├── sobre-nosotros.html
-│   └── contacto.html
-├── index.html
-└── README.md
-```
-
-## ▶️ Instrucciones de visualización
-
-1. Clonar o descargar el repositorio de GitHub.
-2. Abrir la carpeta del proyecto en Visual Studio Code.
-3. Abrir `index.html` con la extensión Live Server.
-4. Utilizar el menú de navegación para visitar las cuatro vistas.
-5. Para comprobar el diseño adaptable, utilizar las herramientas de desarrollo del navegador y simular diferentes anchos de pantalla.
-
-También es posible abrir los archivos HTML directamente en un navegador, aunque Live Server facilita la visualización durante el desarrollo.
-
-## 📱 Diseño adaptable
-
-El proyecto aplica un enfoque Mobile First mediante media queries.
-
-La distribución se adapta a pantallas de distintos tamaños, con especial atención a la legibilidad, las imágenes, las tarjetas de productos, los formularios y la navegación.
-
-## ⚙️ Alcance y limitaciones
-
-EcoMarket es un prototipo académico de interfaz de usuario.
-
-Debido a la restricción de no utilizar JavaScript ni un backend:
-
-* Los controles de búsqueda, filtros y ordenamiento son visuales y no ejecutan operaciones reales sobre el catálogo.
-* La paginación es visual.
-* Los favoritos pueden cambiar de estado mediante HTML y CSS.
-* El formulario aplica validaciones en el navegador, pero no envía mensajes a un servidor.
-* El mapa de contacto es una ilustración, no una ubicación geográfica real.
-
-## 📸 Evidencias del proyecto
-
-Las siguientes capturas documentarán las cuatro vistas en escritorio y móvil.
-
-> Añadir las capturas en la carpeta `capturas/` con los nombres indicados cuando estén preparadas.
+Las capturas muestran las páginas ejecutándose localmente, en escritorio y móvil.
 
 ### Inicio
 
-![Inicio en escritorio](capturas/inicio-escritorio.png)
+**Escritorio**
 
-![Inicio en móvil](capturas/inicio-movil.png)
+![Captura real de Inicio en escritorio](docs/evidencias/inicio-escritorio.png)
+
+**Móvil**
+
+![Captura real de Inicio en móvil](docs/evidencias/inicio-movil.png)
 
 ### Productos
 
-![Catálogo en escritorio](capturas/productos-escritorio.png)
+**Escritorio**
 
-![Catálogo en móvil](capturas/productos-movil.png)
+![Captura real de Productos en escritorio](docs/evidencias/productos-escritorio.png)
+
+**Móvil**
+
+![Captura real de Productos en móvil](docs/evidencias/productos-movil.png)
 
 ### Sobre nosotros
 
-![Sobre nosotros en escritorio](capturas/sobre-nosotros-escritorio.png)
+**Escritorio**
 
-![Sobre nosotros en móvil](capturas/sobre-nosotros-movil.png)
+![Captura real de Sobre nosotros en escritorio](docs/evidencias/sobre-nosotros-escritorio.png)
+
+**Móvil**
+
+![Captura real de Sobre nosotros en móvil](docs/evidencias/sobre-nosotros-movil.png)
 
 ### Contacto
 
-![Contacto en escritorio](capturas/contacto-escritorio.png)
+**Escritorio**
 
-![Contacto en móvil](capturas/contacto-movil.png)
+![Captura real de Contacto en escritorio](docs/evidencias/contacto-escritorio.png)
 
-## 🌐 Despliegue
+**Móvil**
 
-El proyecto se publicará mediante un servicio de alojamiento web estático. El enlace público se añadirá a esta sección una vez comprobado el despliegue.
+![Captura real de Contacto en móvil](docs/evidencias/contacto-movil.png)
 
-## 👨‍💻 Autor
+## 🎨 Mockups del proyecto
 
-Proyecto académico desarrollado individualmente con HTML5 y CSS3.
+Wireframes académicos de baja fidelidad que documentan la estructura de cada página en ambos tamaños.
 
-**EcoMarket — Pequeñas elecciones, grandes cambios.** 🌱
+### Inicio
+
+**Escritorio**
+
+![Mockup wireframe de Inicio en escritorio](docs/mockups/inicio-escritorio.png)
+
+**Móvil**
+
+![Mockup wireframe de Inicio en móvil](docs/mockups/inicio-movil.png)
+
+### Productos
+
+**Escritorio**
+
+![Mockup wireframe de Productos en escritorio](docs/mockups/productos-escritorio.png)
+
+**Móvil**
+
+![Mockup wireframe de Productos en móvil](docs/mockups/productos-movil.png)
+
+### Sobre nosotros
+
+**Escritorio**
+
+![Mockup wireframe de Sobre nosotros en escritorio](docs/mockups/sobre-nosotros-escritorio.png)
+
+**Móvil**
+
+![Mockup wireframe de Sobre nosotros en móvil](docs/mockups/sobre-nosotros-movil.png)
+
+### Contacto
+
+**Escritorio**
+
+![Mockup wireframe de Contacto en escritorio](docs/mockups/contacto-escritorio.png)
+
+**Móvil**
+
+![Mockup wireframe de Contacto en móvil](docs/mockups/contacto-movil.png)
+
+## 🧪 Evidencias de validación W3C
+
+La carpeta `docs/evidencias/` contiene las capturas disponibles de los validadores HTML y CSS. Consulta cada imagen para ver el resultado mostrado en esa captura; las evidencias reflejan el estado validado en ese momento y no garantizan resultados para cambios posteriores.
+
+### Validación HTML
+
+**`index.html`**
+
+![Evidencia de validación HTML de index.html](docs/evidencias/validacion-w3c-index.png)
+
+**`views/productos.html`**
+
+![Evidencia de validación HTML de Productos](docs/evidencias/validacion-w3c-productos.png)
+
+**`views/sobre-nosotros.html`**
+
+![Evidencia de validación HTML de Sobre nosotros](docs/evidencias/validacion-w3c-sobre-nosotros.png)
+
+**`views/contacto.html`**
+
+![Evidencia de validación HTML de Contacto](docs/evidencias/validacion-w3c-contacto.png)
+
+### Validación CSS
+
+**`css/main.css`**
+
+![Evidencia de validación CSS de main.css](docs/evidencias/validacion-w3c-main.png)
+
+**`css/layout.css`**
+
+![Evidencia de validación CSS de layout.css](docs/evidencias/validacion-w3c-layout.png)
+
+**`css/components.css`**
+
+![Evidencia de validación CSS de components.css](docs/evidencias/validacion-w3c-components.png)
+
+**`css/animations.css`**
+
+![Evidencia de validación CSS de animations.css](docs/evidencias/validacion-w3c-animations.png)
+
+## Repositorio
+
+[EcoMarket en GitHub](https://github.com/JohanCepeda92/EcoMarket_JohanCepeda)
+
+## 🚀 Despliegue
+
+No se encontró una URL de publicación ni configuración de despliegue en el repositorio. El despliegue queda pendiente de confirmar y documentar.
+
+## Contexto académico
+
+EcoMarket es un proyecto académico desarrollado con fines educativos.
