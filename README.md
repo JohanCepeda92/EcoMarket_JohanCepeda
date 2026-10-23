@@ -164,9 +164,13 @@ La carpeta `docs/evidencias/` contiene las capturas disponibles de los validador
 
 [EcoMarket en GitHub](https://github.com/JohanCepeda92/EcoMarket_JohanCepeda)
 
-## 🚀 Despliegue
 
-No se encontró una URL de publicación ni configuración de despliegue en el repositorio. El despliegue queda pendiente de confirmar y documentar.
+## 🌐 Sitio web desplegado
+
+EcoMarket está disponible en línea:
+
+**[Visitar EcoMarket](https://ecomarket-johancepeda.netlify.app/)**
+
 
 ## Contexto académico
 
